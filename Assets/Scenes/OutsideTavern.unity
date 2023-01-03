@@ -4773,6 +4773,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6076661428886680857, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 6076661428886680857, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6076661428886680860, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
       propertyPath: m_Name
       value: HUDCanvas
