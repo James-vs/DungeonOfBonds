@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 1f;
     public ContactFilter2D movementFilter;
     public float collisionOffset = 0.05f;
+    public SwordAttack swordAttack;
     
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -15,6 +16,8 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer spriteRenderer;
     
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+
+    bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -26,33 +29,34 @@ public class PlayerController : MonoBehaviour
 
     // Physics controls 
     private void FixedUpdate() {
-        if (movementInput != Vector2.zero) {
-            bool success = TryMove(movementInput);
-            
-            // if movement unsuccessful in both directions, try x and y individually
-            if (!success) {
-                success = TryMove(new Vector2(movementInput.x,0)); 
-
+        // if player not attacking
+        if (canMove) {
+            // if the movement vector isnt 0, move player
+            if (movementInput != Vector2.zero) {
+                bool success = TryMove(movementInput);
+                // if movement unsuccessful in both directions, try x and y individually
                 if (!success) {
-                    success = TryMove(new Vector2(0, movementInput.y));
+                    success = TryMove(new Vector2(movementInput.x,0)); 
+
+                    if (!success) {
+                        success = TryMove(new Vector2(0, movementInput.y));
+                    }
                 }
+
+                animator.SetBool("IsMoving", success);
+            } else {
+                animator.SetBool("IsMoving", false);
             }
 
-            animator.SetBool("IsMoving", success);
-        } else {
-            animator.SetBool("IsMoving", false);
+            // Set direction of sprite to movement direction 
+            if (movementInput.x < 0) {
+                spriteRenderer.flipX = true;
+                Debug.Log("IsMoving: True");
+            } else if (movementInput.x > 0) {
+                spriteRenderer.flipX = false;
+                Debug.Log("IsMoving: False");
+            }
         }
-
-        // Set direction of sprite to movement direction 
-        if (movementInput.x < 0) {
-            spriteRenderer.flipX = true;
-            Debug.Log("IsMoving: True");
-        } else if (movementInput.x > 0) {
-            spriteRenderer.flipX = false;
-            Debug.Log("IsMoving: False");
-        }
-        
-        
     }
 
     private bool TryMove(Vector2 direction) {
@@ -80,5 +84,34 @@ public class PlayerController : MonoBehaviour
     // Movement Controls
     void OnMove(InputValue movementValue){
         movementInput = movementValue.Get<Vector2>();
+    }
+
+    void OnFire() {
+        print("Fire pressed");
+        animator.SetTrigger("SwordAttack");
+    }
+
+    public void SwordAttack() {
+        LockMovement();
+        if (spriteRenderer.flipX == true) {
+            swordAttack.AttackLeft();
+        } else {
+            swordAttack.AttackRight();
+        }
+    }
+
+    public void EndSwordAttack(){
+        UnlockMovement();
+        swordAttack.StopAttack();
+    }
+
+    public void LockMovement() {
+        // lock movement while attacking
+        canMove = false;
+    }
+
+    public void UnlockMovement() {
+        // unlock movement after attacking
+        canMove = true;
     }
 }
