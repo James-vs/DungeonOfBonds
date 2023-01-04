@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -113,5 +114,11 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement() {
         // unlock movement after attacking
         canMove = true;
+    }
+
+    // function to respawn character (restart the level)
+    public void Respawn () {
+        //Instantiate(this.gameObject, new Vector3(0,0,0), transform.rotation);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
