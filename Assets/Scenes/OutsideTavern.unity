@@ -24502,6 +24502,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 784427674}
+    - target: {fileID: 6030257363591579642, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6812714068671426191, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
       propertyPath: m_DefaultActionMap
       value: Player

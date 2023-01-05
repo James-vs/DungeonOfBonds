@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 488400299206804458}
   - component: {fileID: 9192621310851113083}
   - component: {fileID: 4074195614080549256}
+  - component: {fileID: 8974725513126051286}
   m_Layer: 0
   m_Name: PlayerArrow
-  m_TagString: Untagged
+  m_TagString: FriendlyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,18 +69,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05017498, y: -0.053967476}
+  m_Offset: {x: -0.0038047358, y: 0.00007998943}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.23, y: 0.24}
+    oldSize: {x: 0.24, y: 0.23}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.04859358, y: 0.14261723}
+  m_Size: {x: 0.2420588, y: 0.05786097}
   m_EdgeRadius: 0
 --- !u!212 &4074195614080549256
 SpriteRenderer:
@@ -133,3 +134,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8974725513126051286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3957020864036676421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0335aa27f928d304582b690cd1cb6761, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToDeal: 0

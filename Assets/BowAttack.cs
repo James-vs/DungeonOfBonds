@@ -24,18 +24,19 @@ public class BowAttack : MonoBehaviour
 
     void Attack(){
         Vector2 startLoc = transform.position;
+        startLoc.y = startLoc.y - 0.06f;
         Vector3 clickLoc = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         clickLoc.z = 0f;
         Vector2 bulletVector = new Vector2(clickLoc.x - startLoc.x, clickLoc.y - startLoc.y);
-        Debug.Log(bulletVector);
         bulletVector.Normalize();
-        Debug.Log(bulletVector);
 
         GameObject freshSpawn = Instantiate(arrowToShoot);
         freshSpawn.transform.position = startLoc;
         freshSpawn.GetComponent<Rigidbody2D>().velocity = bulletVector * arrowSpeed;
         float angle = Mathf.Atan2(bulletVector.y, bulletVector.x) * Mathf.Rad2Deg;
         freshSpawn.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        freshSpawn.GetComponent<FriendlyProjectile>().damageToDeal = bowDamage * bowLevelMultiplier;
     }
 
     void OnFire(){
