@@ -137,6 +137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 222fb79ba4eb52f4498b74ca9fc3b51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDefeated: 0
+  damage: 20
   health: 1
 --- !u!95 &1448415305006088995
 Animator:
