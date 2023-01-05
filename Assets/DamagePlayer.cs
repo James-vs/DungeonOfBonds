@@ -35,6 +35,8 @@ public class DamagePlayer : MonoBehaviour
         if (slider.value <= 0) {
             Debug.Log("Player Death");
             animator.SetTrigger("Death");
+
+            //need to do some other stuff
         }
     }
 }

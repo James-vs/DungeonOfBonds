@@ -24502,6 +24502,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 784427674}
+    - target: {fileID: 6030257363591579642, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6812714068671426191, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
       propertyPath: m_DefaultActionMap
       value: Player
@@ -24517,6 +24521,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3542194842235421586, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
   m_PrefabInstance: {fileID: 3542194843823885889}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3542194843823885891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542194843823885890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cc4afd224c3cb4789642e87649ae9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bowDamage: 3
+  bowLevelMultiplier: 1
+  attackCooldown: 0.4
+  arrowSpeed: 5
+  arrowToShoot: {fileID: 3957020864036676421, guid: 0a48a29f14c430d478f7e1a14950c604, type: 3}
 --- !u!1001 &5914588408118290177
 PrefabInstance:
   m_ObjectHideFlags: 0
