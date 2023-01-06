@@ -23,6 +23,8 @@ public class Enemy : MonoBehaviour
 
     public float health = 1f;
 
+    public bool canMove = true;
+
     private void Start() {
         animator = GetComponent<Animator>();
     }
@@ -36,5 +38,9 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void LockMovement() {
+        // lock movement while attacking
+        canMove = false;
+    }
 
 }
