@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class AIController : MonoBehaviour
+public class AICombatController : MonoBehaviour
 {
     SwordAttack sa;
     AIPath aip;
