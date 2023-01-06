@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 6030257363591579642}
   - component: {fileID: 6342858873383009199}
   - component: {fileID: 8440363038544514298}
+  - component: {fileID: -1433478088595312706}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -362,3 +363,20 @@ MonoBehaviour:
     maxNormalAngle: 0
   collisionOffset: 0.05
   swordAttack: {fileID: 6653637966873099454}
+--- !u!114 &-1433478088595312706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542194842235421586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cc4afd224c3cb4789642e87649ae9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bowDamage: 3
+  bowLevelMultiplier: 1
+  attackCooldown: 0.4
+  arrowSpeed: 5
+  arrowToShoot: {fileID: 3957020864036676421, guid: 0a48a29f14c430d478f7e1a14950c604, type: 3}

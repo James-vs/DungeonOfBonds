@@ -856,9 +856,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      WallTiles_14: -749074404
       WallTiles_18: -807926348
-      WallTiles_27: -4789548814206109747
+      WallTiles_12: -2126184730
       WallTiles_6: -1600688299
       WallTiles_21: -2816085319816459297
       WallTiles_23: -7217348871357176810
@@ -877,15 +876,16 @@ TextureImporter:
       WallTiles_20: 6001727014483959143
       WallTiles_3: -437472224
       WallTiles_24: -2784588437047556075
+      WallTiles_14: -749074404
       WallTiles_4: -1575551128
-      WallTiles_9: 267404121
+      WallTiles_27: -4789548814206109747
       WallTiles_2: -710291150
-      WallTiles_7: -1498409012
+      WallTiles_9: 267404121
       WallTiles_11: -700091764
-      WallTiles_12: -2126184730
-      WallTiles_0: 1390670175
+      WallTiles_7: -1498409012
       WallTiles_15: -1492546100
       WallTiles_26: 3244145816730369063
+      WallTiles_0: 1390670175
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
