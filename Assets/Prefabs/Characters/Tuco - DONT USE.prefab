@@ -165,8 +165,8 @@ GameObject:
   - component: {fileID: 717733486028220936}
   - component: {fileID: 2507050310942025141}
   m_Layer: 0
-  m_Name: Tuco
-  m_TagString: Untagged
+  m_Name: Tuco - DONT USE
+  m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

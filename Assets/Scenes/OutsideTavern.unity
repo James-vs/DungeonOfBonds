@@ -23132,6 +23132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefaultAI
       objectReference: {fileID: 0}
+    - target: {fileID: 3542194842235421586, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
+      propertyPath: m_TagString
+      value: AI
+      objectReference: {fileID: 0}
     - target: {fileID: 3542194842235421588, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -23187,11 +23191,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8440363038544514298, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
---- !u!1 &1654498896 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6076661428791403426, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
-  m_PrefabInstance: {fileID: 1914044481}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1674270609
 GameObject:
   m_ObjectHideFlags: 0
@@ -25150,11 +25149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6076661429452638448, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 8.554691
+      value: 8.5546875
       objectReference: {fileID: 0}
     - target: {fileID: 6076661429452638448, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.059900284
+      value: -0.059898376
       objectReference: {fileID: 0}
     - target: {fileID: 6076661429710830402, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -25294,8 +25293,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamMates: []
+  aiSet: []
   hudcanvas: {fileID: 328300572}
-  test: {fileID: 1654498896}
+  aiUI: {fileID: 5046829282242632881, guid: 0db982cd6785711499b6b7c72438b7d7, type: 3}
 --- !u!1001 &5914588408118290177
 PrefabInstance:
   m_ObjectHideFlags: 0
