@@ -29,14 +29,14 @@ public class SwordAttack : MonoBehaviour
         swordCollider.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Enemy")) {
             Enemy enemy = other.GetComponent<Enemy>();
             Debug.Log("Enemy detected");
 
-            if (enemy != null) {
+            //if (other != null) {
                 enemy.Health -= damage;
-            }
+            //}
         }
     }
 }

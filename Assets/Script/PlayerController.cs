@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("SwordAttack");
     }
 
+    // function to flip the player to face attacking direction 
     public void SwordAttack() {
         LockMovement();
         if (spriteRenderer.flipX == true) {
@@ -101,6 +102,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // function to end sword attack and unlock player movement after 
     public void EndSwordAttack(){
         UnlockMovement();
         swordAttack.StopAttack();

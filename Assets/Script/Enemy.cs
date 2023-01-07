@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public float chaseSpeed = 0.3f;
+
     public float damage = 20f;
 
     public float health = 1f;
@@ -41,6 +43,11 @@ public class Enemy : MonoBehaviour
     public void LockMovement() {
         // lock movement while attacking
         canMove = false;
+    }
+
+    // function to make the enemy move towards the player
+    public void ChasePlayer(GameObject player) {
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, chaseSpeed * Time.deltaTime);
     }
 
 }
