@@ -20,11 +20,15 @@ public class DamagePlayer : MonoBehaviour
         // if enemy touched player, and enemy not in death animation, damage player
         if (other.CompareTag("Enemy")) {
             Debug.Log("Enemy touched player");
-            if (!other.GetComponent<Enemy>().isDefeated) {
+            Slider slider = healthBar.GetComponent<Slider>();
+            Enemy enemy = other.GetComponent<Enemy>();
+            if (enemy != null && !enemy.isDefeated) {
                 Debug.Log("Enemy damaged Player");
-                Enemy enemy = other.GetComponent<Enemy>();
-                Slider slider = healthBar.GetComponent<Slider>();
                 InflictDamage(slider,enemy.damage);
+            } else if (!other.GetComponent<BossSlimeAIScript>().isDefeated) {
+                Debug.Log("Boss damaged player");
+                BossSlimeAIScript b = other.GetComponent<BossSlimeAIScript>();
+                InflictDamage(slider,b.damage);
             }
         }
     }
