@@ -9,6 +9,7 @@ TagManager:
   - FriendlyProjectile
   - DungeonEntrance
   - ObstacleMap
+  - AI
   layers:
   - Default
   - TransparentFX

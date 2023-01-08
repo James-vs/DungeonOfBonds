@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 2507050310942025141}
   m_Layer: 0
   m_Name: DefaultAI
-  m_TagString: Untagged
+  m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,6 +408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee642a4bb4f82945b872b1790ddc78e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  myName: 
+  onTheTeam: 0
 --- !u!1 &7099606648601825122
 GameObject:
   m_ObjectHideFlags: 0
