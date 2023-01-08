@@ -24,6 +24,7 @@ public class FriendlyProjectile : MonoBehaviour
             Debug.Log("valid col");
             Enemy e = col.gameObject.GetComponent<Enemy>();
             e.Health -= damageToDeal;
+            Destroy(gameObject);
         }
     }
 
