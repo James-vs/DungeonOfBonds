@@ -7,35 +7,59 @@ public class BossSlimeAIScript : MonoBehaviour
 {
 
     public Transform target;
-
-    public float speed = 200f;
+    public float speed = 300f;
     public float nextWaypointDistance = 3f;
-
+    public GameObject slime;
+    public bool isDefeated = false;
+    public float damage = 30f;
+    public bool damaged = false;
+    
+    float timer = 1f;
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
+    bool canMove = true;
 
     Seeker seeker;
     Rigidbody2D rb;
 
+    Animator animator;
+
+    public float Health {
+        set {
+            health = value;
+            Debug.Log("boss health " + health);
+            if (health <= 0) {
+                Defeated();
+            }
+        }
+        get {
+            return health;
+        }
+    }
+    
+    public float health = 1f;
     
 
     // Start is called before the first frame update
     void Start() {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         InvokeRepeating("UpdatePath", 0f, .5f);
         seeker.StartPath(rb.position, target.position, OnPathComplete);
 
-    }
+    }    
 
+    // function to update the path to the target 
     void UpdatePath() {
-        if (seeker.IsDone()) {
+        if (seeker.IsDone() && canMove == true) {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
         }
     }
 
+    // function to handle enemy reaching its destination
     void OnPathComplete(Path p) {
         if (!p.error) {
             path = p;
@@ -43,7 +67,8 @@ public class BossSlimeAIScript : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
+    // function to handle movement and physics
     private void FixedUpdate() {
         if (path == null) return;
 
@@ -64,6 +89,35 @@ public class BossSlimeAIScript : MonoBehaviour
         if (distance < nextWaypointDistance) {
             currentWaypoint++;
         }
-        
+
+        // spawn a slime every 3 seconds
+        timer -= Time.deltaTime;
+        if (timer <= 0f) {
+            Instantiate(slime, rb.position, transform.rotation);
+            timer = 1f;
+        }
+
+        if (damaged == true) {
+            animator.SetBool("Damaged", true);
+        }
+    }
+    
+    public void Defeated() {
+        animator.SetTrigger("Defeated");
+        isDefeated = true;
+    }
+
+    public void RemoveEnemy() {
+        Destroy(gameObject);
+    }
+
+    public void LockMovement() {
+        // lock movement while attacking
+        canMove = false;
+    }
+
+    public void DamagedEnd() {
+        damaged = false;
+        animator.SetBool("Damaged", false);
     }
 }

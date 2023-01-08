@@ -36,6 +36,10 @@ public class SwordAttack : MonoBehaviour
 
             if (enemy != null) {
                 enemy.Health -= damage;
+            } else {
+                BossSlimeAIScript b = other.GetComponent<BossSlimeAIScript>();
+                b.Health -= damage;
+                b.damaged = true;
             }
         }
     }
