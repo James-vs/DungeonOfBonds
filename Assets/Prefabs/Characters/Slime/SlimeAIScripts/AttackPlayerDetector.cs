@@ -12,7 +12,6 @@ public class AttackPlayerDetector : MonoBehaviour
         ChaseState chaseState = chase.GetComponent<ChaseState>();
         if (other.CompareTag("Player")) {
             chaseState.inAttackRange = true;
-            transform.GetComponent<CircleCollider2D>().enabled = false;
         }
     }
 }

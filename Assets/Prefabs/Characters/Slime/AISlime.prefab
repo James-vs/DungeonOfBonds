@@ -142,7 +142,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDefeated: 0
-  chaseSpeed: 0.3
   damage: 20
   health: 1
   canMove: 1
@@ -428,6 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083b4907cd24f5d4ea7bb94703adf78b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.3
   idle: {fileID: 8037293746483865584}
 --- !u!1 &8037293747552024229
 GameObject:

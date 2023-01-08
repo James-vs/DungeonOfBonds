@@ -6,7 +6,7 @@ public class AttackState : State
 {
     public override State RunCurrentState()
     {
-        //Debug.Log("Attacking player");
+        Debug.Log("Attacking player");
         return this;
     }
 }
