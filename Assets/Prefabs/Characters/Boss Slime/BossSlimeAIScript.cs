@@ -13,6 +13,7 @@ public class BossSlimeAIScript : MonoBehaviour
     public bool isDefeated = false;
     public float damage = 30f;
     public bool damaged = false;
+    public GameObject switchWall;
     
     float timer = 1f;
     Path path;
@@ -101,21 +102,26 @@ public class BossSlimeAIScript : MonoBehaviour
             animator.SetBool("Damaged", true);
         }
     }
-    
+
+    // function to trigger defeated animation    
     public void Defeated() {
         animator.SetTrigger("Defeated");
         isDefeated = true;
     }
 
+    // function to destroy enemy and unblock next level switch 
     public void RemoveEnemy() {
+        if (switchWall != null) switchWall.SetActive(false);
         Destroy(gameObject);
     }
 
+    // function to lock enemy movement
     public void LockMovement() {
         // lock movement while attacking
         canMove = false;
     }
 
+    // function to change enemy back to idle state after being damaged
     public void DamagedEnd() {
         damaged = false;
         animator.SetBool("Damaged", false);
