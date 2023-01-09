@@ -122,10 +122,11 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    // function to take player to the Dungeon
+    // function to chenge scene to dungeon scene 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("DungeonEntrance")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
+
 }
