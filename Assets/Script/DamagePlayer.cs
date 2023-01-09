@@ -22,16 +22,22 @@ public class DamagePlayer : MonoBehaviour
         if (other.CompareTag("Enemy")) {
             Debug.Log("Enemy touched player");
             Enemy enemy = other.GetComponent<Enemy>();
+            BossSlimeAIScript b = other.GetComponent<BossSlimeAIScript>();
             if (enemy != null && !enemy.isDefeated) {
                 Debug.Log("Enemy damaged Player");
                 InflictDamage(slider,enemy.damage);
-            } else if (!other.GetComponent<BossSlimeAIScript>().isDefeated) {
+            } else if (b != null && !b.isDefeated) {
                 Debug.Log("Boss damaged player");
-                BossSlimeAIScript b = other.GetComponent<BossSlimeAIScript>();
                 InflictDamage(slider,b.damage);
+            } else if (!other.GetComponent<BossScorpionAIScript>().isDefeated) {
+                Debug.Log("Boss damaged player");
+                BossScorpionAIScript s = other.GetComponent<BossScorpionAIScript>();
+                InflictDamage(slider,s.damage);
             }
         } else if (other.CompareTag("Food")) {
             IncreaseHealth(slider, 100f);
+        } else if (other.CompareTag("EnemyProjectile")) {
+            InflictDamage(slider, other.GetComponent<ScorpionProjectile>().damage);
         }
     }
 
