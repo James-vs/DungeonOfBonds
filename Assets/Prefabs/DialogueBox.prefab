@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How did I get here?
+  m_text: Where am I? Looks like there's a tavern ahead
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f95e67556cc7ece4e933e89ac9a86d59, type: 2}
   m_sharedMaterial: {fileID: 2726130780741777162, guid: f95e67556cc7ece4e933e89ac9a86d59, type: 2}
@@ -144,6 +144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8154670017950988536}
+  - component: {fileID: 6555894308478105168}
   m_Layer: 0
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -167,6 +168,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6555894308478105168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8154670017950988543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ee9e95f4ad9e64c801ae8f2df5eebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 3
 --- !u!1 &8154670018716586978
 GameObject:
   m_ObjectHideFlags: 0
