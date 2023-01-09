@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DungeonHub.unity
     guid: e33783e9408cbd342af2a668136ac464
+  - enabled: 1
+    path: Assets/Scenes/SplitCashOT.unity
+    guid: b0df7edf0335b344b93ae62fe4f7e665
+  - enabled: 1
+    path: Assets/Scenes/NoSplitCashOT.unity
+    guid: 39a5509d0de078d468d61ddbc5684809
   m_configObjects: {}
