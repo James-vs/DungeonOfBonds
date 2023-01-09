@@ -11,6 +11,7 @@ TagManager:
   - ObstacleMap
   - AI
   - Food
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX

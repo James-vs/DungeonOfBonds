@@ -23,8 +23,12 @@ public class FriendlyProjectile : MonoBehaviour
         if(col.gameObject.tag == "Enemy"){
             Debug.Log("valid col");
             Enemy e = col.gameObject.GetComponent<Enemy>();
-            if (e == null) { // if enemy not a basic enemy
-                BossSlimeAIScript b = col.gameObject.GetComponent<BossSlimeAIScript>();
+            BossSlimeAIScript b = col.gameObject.GetComponent<BossSlimeAIScript>();
+            if (b == null && e == null) {
+                BossScorpionAIScript s = col.gameObject.GetComponent<BossScorpionAIScript>();
+                s.Health -= damageToDeal;
+                s.damaged = true;
+            } else if (e == null) { // if enemy not a basic enemy
                 b.Health -= damageToDeal;
                 b.damaged = true;
             } else {

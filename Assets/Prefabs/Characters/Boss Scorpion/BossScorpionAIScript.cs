@@ -14,6 +14,9 @@ public class BossScorpionAIScript : MonoBehaviour
     public float damage = 30f;
     public bool damaged = false;
     public GameObject switchWall;
+    public GameObject projectile;
+    public GameObject backWall;
+    public GameObject bossbattleWall;
     
     float timer = 1f;
     Path path;
@@ -95,6 +98,7 @@ public class BossScorpionAIScript : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0f) {
             Instantiate(slime, rb.position, transform.rotation);
+            Instantiate(projectile, rb.position, transform.rotation);
             timer = 1f;
         }
 
@@ -112,6 +116,8 @@ public class BossScorpionAIScript : MonoBehaviour
     // function to destroy enemy and unblock next level switch 
     public void RemoveEnemy() {
         if (switchWall != null) switchWall.SetActive(false);
+        if (backWall != null) backWall.SetActive(false);
+        if (bossbattleWall != null) bossbattleWall.SetActive(false);
         Destroy(gameObject);
     }
 
