@@ -36,15 +36,6 @@ public class TeamStatusController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //for testing
-        if (Input.GetKeyUp(KeyCode.X))
-        {
-            foreach (GameObject ai in aiSet){
-            AITeammateData aitd = ai.GetComponent<AITeammateData>();
-            aitd.onTheTeam = true;
-            addToTeamByName(ai.name);}
-        }
-
         foreach (GameObject tm in teamMates){
             AITeammateData aitd = tm.GetComponent<AITeammateData>();
             GameObject uip;
@@ -61,7 +52,7 @@ public class TeamStatusController : MonoBehaviour
 
     public void addToTeamByName(string name){
         GameObject tm = GameObject.Find(name);
-        if (tm.GetComponent<AITeammateData>().onTheTeam == true){
+        if (tm.GetComponent<AITeammateData>().onTheTeam == false){
             teamMates.Add(tm);
             GameObject newAiUI = Instantiate(aiUI, hudcanvas.transform);
             nameToUIPiece.Add(name, newAiUI);

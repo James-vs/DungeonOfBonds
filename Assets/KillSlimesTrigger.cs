@@ -1,11 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class BackWallTrigger : MonoBehaviour
+public class KillSlimesTrigger : MonoBehaviour
 {
-
     public TriggerToDialogue ttd;
     public string message;
     private bool triggered = false;
@@ -27,8 +25,6 @@ public class BackWallTrigger : MonoBehaviour
             var boxToSpawn = ttd.dbox(message);
             Instantiate(boxToSpawn, col.gameObject.transform);
             triggered = true;
-            var hc = GameObject.Find("HUDCanvas");
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nHead west to the tavern.";
         }
 
     }

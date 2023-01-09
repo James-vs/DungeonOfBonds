@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class BackWallTrigger : MonoBehaviour
+public class SpawnTrigger : MonoBehaviour
 {
-
-    public TriggerToDialogue ttd;
+   public TriggerToDialogue ttd;
     public string message;
     private bool triggered = false;
     // Start is called before the first frame update
@@ -28,7 +27,7 @@ public class BackWallTrigger : MonoBehaviour
             Instantiate(boxToSpawn, col.gameObject.transform);
             triggered = true;
             var hc = GameObject.Find("HUDCanvas");
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nHead west to the tavern.";
+            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\n Make it to safety!";
         }
 
     }
