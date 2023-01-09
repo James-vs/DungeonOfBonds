@@ -17,10 +17,10 @@ public class DamagePlayer : MonoBehaviour
 
     // Check for collisions
     private void OnTriggerEnter2D(Collider2D other) {
+        Slider slider = healthBar.GetComponent<Slider>();
         // if enemy touched player, and enemy not in death animation, damage player
         if (other.CompareTag("Enemy")) {
             Debug.Log("Enemy touched player");
-            Slider slider = healthBar.GetComponent<Slider>();
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null && !enemy.isDefeated) {
                 Debug.Log("Enemy damaged Player");
@@ -30,6 +30,8 @@ public class DamagePlayer : MonoBehaviour
                 BossSlimeAIScript b = other.GetComponent<BossSlimeAIScript>();
                 InflictDamage(slider,b.damage);
             }
+        } else if (other.CompareTag("Food")) {
+            IncreaseHealth(slider, 100f);
         }
     }
 
@@ -39,8 +41,15 @@ public class DamagePlayer : MonoBehaviour
         if (slider.value <= 0) {
             Debug.Log("Player Death");
             animator.SetTrigger("Death");
+        }
+    }
 
-            //need to do some other stuff
+    // function to increase the health of the player by the value given
+    // health can not go over 100
+    private void IncreaseHealth(Slider slider, float value) {
+        slider.value += value;
+        if (slider.value > 100f) {
+            slider.value = 100f;
         }
     }
 }

@@ -1,0 +1,1223 @@
+fileFormatVersion: 2
+guid: ecd08aa49f317ea41aa0301c878ab0d0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 118
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fd575e70616ec4cac8c05ef51ab2e0
+      internalID: 431208603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d47c74c08460a4c8482c9610f94aec
+      internalID: -260381972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4617922000b4c44ad0591ac73761be
+      internalID: 256423462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c2cd6c67f55f44db3fc6df941400ad
+      internalID: -1655440837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_4
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9226eb5759f70e34ab9426a1e3088e75
+      internalID: -1691534516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_5
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b892fa71e641d4883f3a407f40b48d
+      internalID: -1858121511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fbc806cd020f346b3c538179b97596
+      internalID: 1864152494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d6abc8c3ba0d84783c97c786fa0540
+      internalID: 1154238612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d013eaa49ce2a1044b93e7399c65a53a
+      internalID: -1408383731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_9
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 76
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed30a37c009fefc4089bba95866bf7fd
+      internalID: 1353321182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae0d2497b689874faa3bba29a934f84
+      internalID: -970765197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8ffe72f5ce3a047a89d3c7a8114ff4
+      internalID: 809380352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_12
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da97db4a890ecbf439ebdb4179a81a54
+      internalID: -1492408927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_13
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8827b6aa239c2ae49b15c7e6405cac1a
+      internalID: -1301146069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_14
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c9e0fb308f678459672763d242b466
+      internalID: 1791601842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc477b33a6f5eb4bb703249cbc62b43
+      internalID: -1229880503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2125f3276faa8342b7a4128ac2585bc
+      internalID: 1302330500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_17
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4cf543d85757b48a2901aaf6c991bf
+      internalID: 80020652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771787964e7825148ae70968210a0628
+      internalID: -1671979107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_19
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 57
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4b3052ea4e60f4bb20d1eda763701d
+      internalID: -749235003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_20
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ac44cda6657d54f92fdc20b048d9ea
+      internalID: -2054614759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_21
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0ab45ab837f6549960143e7acd1f93
+      internalID: -1364309093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47e76e7d0caed149b62dff99f145735
+      internalID: -249190005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_23
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6752f4f2cc57343af270148c973a36
+      internalID: -976059590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_24
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2089f5fba43fd942980859dc9d34f90
+      internalID: -702713644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_25
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cc19326f4eec145936a13d3a3668ab
+      internalID: -1649260227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb0d1de6af7e9d40ad9d8a39e5a570e
+      internalID: 1654728808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_27
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1530b72283e4794286dc52f07bc0f7c
+      internalID: -2125472102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1cfa54b4d74e047995f3dab9673450
+      internalID: 1828411092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_29
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 38
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf5bcc5fd1148f47b7075f4b73bd997
+      internalID: -1304796718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7107921f5bc288843a908ec9ddd51706
+      internalID: -1525375812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_31
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bfaa7f52ba5f84db91e36d8f71bb8d
+      internalID: 1796593596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_32
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe860aea5e81fd46a776b30b533ea2b
+      internalID: -1463841735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_33
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bcc27982533394d864141017961bb5
+      internalID: -1317962861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_34
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7375a9af67e166d4089b59c7b053213f
+      internalID: 244427470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_35
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ff448abe2b09949b4aeefa2ff6bf54
+      internalID: 2021610636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_36
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca65fbd24b0ae14087fe74a8aba77ad
+      internalID: -1478811075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_37
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deb1045a7f47b647ab4d1889ae1b369
+      internalID: 1642533403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_38
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ae311373145744ba66cb8a91d6ea08
+      internalID: 1798425641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_39
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 19
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dfe6b5b488e8441906827c2746a652
+      internalID: 1875987342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd1a614fda103544a80f3da0b08daba
+      internalID: -955999365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_41
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fbaa0315536c7498834de17671b1ee
+      internalID: -520468078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_42
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04993d014b4eb849825655781d5262c
+      internalID: 1597926895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_43
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b70e4edd58395f468d7e0eb61c42c36
+      internalID: -1709098853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_44
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81acb4b88071e745b963fbcb4df5c92
+      internalID: 822735488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_45
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688419f621336c3438c0a7155b1ef3be
+      internalID: 2019979734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_46
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679bc0f2667934a40beff4c603d36dd2
+      internalID: 1872333912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_47
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350a56953bb3d8445bd094f8952b2e8e
+      internalID: -1755733420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_48
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4cccecbad823e48923dada52114cad
+      internalID: -983901125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PixelTileSets_TopDownHouses_49
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 19.2
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d746b69f840a646975b3bfcd8094da
+      internalID: 1746772636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PixelTileSets_TopDownHouses_21: -1364309093
+      PixelTileSets_TopDownHouses_26: 1654728808
+      PixelTileSets_TopDownHouses_44: 822735488
+      PixelTileSets_TopDownHouses_1: -260381972
+      PixelTileSets_TopDownHouses_2: 256423462
+      PixelTileSets_TopDownHouses_5: -1858121511
+      PixelTileSets_TopDownHouses_17: 80020652
+      PixelTileSets_TopDownHouses_24: -702713644
+      PixelTileSets_TopDownHouses_28: 1828411092
+      PixelTileSets_TopDownHouses_25: -1649260227
+      PixelTileSets_TopDownHouses_20: -2054614759
+      PixelTileSets_TopDownHouses_19: -749235003
+      PixelTileSets_TopDownHouses_9: 1353321182
+      PixelTileSets_TopDownHouses_27: -2125472102
+      PixelTileSets_TopDownHouses_10: -970765197
+      PixelTileSets_TopDownHouses_7: 1154238612
+      PixelTileSets_TopDownHouses_8: -1408383731
+      PixelTileSets_TopDownHouses_12: -1492408927
+      PixelTileSets_TopDownHouses_6: 1864152494
+      PixelTileSets_TopDownHouses_32: -1463841735
+      PixelTileSets_TopDownHouses_41: -520468078
+      PixelTileSets_TopDownHouses_0: 431208603
+      PixelTileSets_TopDownHouses_34: 244427470
+      PixelTileSets_TopDownHouses_3: -1655440837
+      PixelTileSets_TopDownHouses_38: 1798425641
+      PixelTileSets_TopDownHouses_18: -1671979107
+      PixelTileSets_TopDownHouses_22: -249190005
+      PixelTileSets_TopDownHouses_39: 1875987342
+      PixelTileSets_TopDownHouses_45: 2019979734
+      PixelTileSets_TopDownHouses_47: -1755733420
+      PixelTileSets_TopDownHouses_4: -1691534516
+      PixelTileSets_TopDownHouses_31: 1796593596
+      PixelTileSets_TopDownHouses_35: 2021610636
+      PixelTileSets_TopDownHouses_48: -983901125
+      PixelTileSets_TopDownHouses_42: 1597926895
+      PixelTileSets_TopDownHouses_29: -1304796718
+      PixelTileSets_TopDownHouses_33: -1317962861
+      PixelTileSets_TopDownHouses_23: -976059590
+      PixelTileSets_TopDownHouses_40: -955999365
+      PixelTileSets_TopDownHouses_46: 1872333912
+      PixelTileSets_TopDownHouses_43: -1709098853
+      PixelTileSets_TopDownHouses_13: -1301146069
+      PixelTileSets_TopDownHouses_30: -1525375812
+      PixelTileSets_TopDownHouses_14: 1791601842
+      PixelTileSets_TopDownHouses_36: -1478811075
+      PixelTileSets_TopDownHouses_15: -1229880503
+      PixelTileSets_TopDownHouses_16: 1302330500
+      PixelTileSets_TopDownHouses_11: 809380352
+      PixelTileSets_TopDownHouses_37: 1642533403
+      PixelTileSets_TopDownHouses_49: 1746772636
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
