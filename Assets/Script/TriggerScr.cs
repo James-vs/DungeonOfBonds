@@ -28,8 +28,6 @@ public class TriggerScr : MonoBehaviour
             var boxToSpawn = ttd.dbox(message);
             Instantiate(boxToSpawn, talker.transform);
             triggered = true;
-            var hc = GameObject.Find("HUDCanvas");
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nHead west to the tavern.";
         }
 
     }

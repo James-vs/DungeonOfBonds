@@ -40,8 +40,8 @@ public class BowPickup : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col){
-        pickup = true;
         if(col.name == "Player"){
+            pickup = true;
             var boxToSpawn = ttd.dbox(message);
             Instantiate(boxToSpawn, col.gameObject.transform);
             hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nPress F to pickup the bow";
