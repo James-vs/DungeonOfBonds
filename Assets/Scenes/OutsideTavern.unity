@@ -94117,6 +94117,10 @@ PrefabInstance:
       propertyPath: bowDamage
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1026725921541139015, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2699551059411024981, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -94198,28 +94202,12 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6955905211331639589, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
-      propertyPath: m_Size.x
-      value: 0.6094799
-      objectReference: {fileID: 0}
-    - target: {fileID: 6955905211331639589, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
-      propertyPath: m_Size.y
-      value: 0.2861035
-      objectReference: {fileID: 0}
-    - target: {fileID: 6955905211331639589, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6955905211331639589, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.17838383
-      objectReference: {fileID: 0}
-    - target: {fileID: 6955905211331639589, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.02669543
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: 6653637966873099454, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
+    - {fileID: 3015030696420873369, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
 --- !u!1 &3542194843823885890 stripped
 GameObject:
