@@ -44,6 +44,7 @@ public class SwordPickup : MonoBehaviour
             var boxToSpawn = ttd.dbox(message);
             Instantiate(boxToSpawn, col.gameObject.transform);
             hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nPress F to pickup the sword";
+            col.gameObject.transform.GetChild(0).GetComponent<Collider2D>().enabled = true;
         }
     }
 
