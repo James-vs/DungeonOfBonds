@@ -7,10 +7,11 @@ public class SwordAttack : MonoBehaviour
 
     public float damage = 3f;
     Vector2 rightAttackOffset;
-    public Collider2D swordCollider;
+    Collider2D swordCollider;
 
     private void Start() {
-        rightAttackOffset = transform.position;
+        swordCollider = GetComponent<Collider2D>();
+        rightAttackOffset = transform.localPosition;
     }
 
     public void AttackRight(){
@@ -29,17 +30,22 @@ public class SwordAttack : MonoBehaviour
         swordCollider.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("collision detected");
         if (other.CompareTag("Enemy")) {
             Enemy enemy = other.GetComponent<Enemy>();
+            BossSlimeAIScript b = other.GetComponent<BossSlimeAIScript>();
+            BossScorpionAIScript s = other.GetComponent<BossScorpionAIScript>();
             Debug.Log("Enemy detected");
 
             if (enemy != null) {
                 enemy.Health -= damage;
-            } else {
-                BossSlimeAIScript b = other.GetComponent<BossSlimeAIScript>();
+            } else if (b != null) {
                 b.Health -= damage;
                 b.damaged = true;
+            } else if (s != null) {
+                s.Health -= damage;
+                s.damaged = true;
             }
         }
     }
