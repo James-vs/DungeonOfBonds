@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
             );
 
             if (count == 0) {
+                
                 rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
                 return true;
             } else {
