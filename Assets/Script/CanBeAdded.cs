@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CanBeAdded : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class CanBeAdded : MonoBehaviour
             done = true;
             GameObject.Find("Player").GetComponent<TeamStatusController>().addToTeamByName(parent.name);
             Debug.Log("trying to add teammate");
+            var hc = GameObject.Find("HUDCanvas");
+            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nHead north to take on the dungeon.";
         }
     }
 

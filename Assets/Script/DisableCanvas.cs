@@ -9,6 +9,8 @@ public class DisableCanvas : MonoBehaviour
     public GameObject currentObjective;
     public GameObject moneySplit;
 
+    
+
     public void onClick() {
         Debug.Log("Click detected");
         moneySplit.SetActive(false);
