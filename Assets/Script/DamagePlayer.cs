@@ -7,6 +7,9 @@ public class DamagePlayer : MonoBehaviour
 {
     // reference to the healthBar
     public GameObject healthBar;
+    // audio sources
+    public AudioSource heal;
+
     // reference to players animator
     Animator animator;
 
@@ -36,6 +39,7 @@ public class DamagePlayer : MonoBehaviour
             }
         } else if (other.CompareTag("Food")) {
             IncreaseHealth(slider, 100f);
+            if (!heal.isPlaying) heal.Play();
         } else if (other.CompareTag("EnemyProjectile")) {
             InflictDamage(slider, other.GetComponent<ScorpionProjectile>().damage);
         }
