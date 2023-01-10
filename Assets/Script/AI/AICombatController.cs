@@ -12,7 +12,6 @@ public class AICombatController : MonoBehaviour
     void Start()
     {
         sa = GetComponent<SwordAttack>();
-        sa.swordCollider.enabled = false;
         aip = GetComponent<AIPath>();
     }
 
