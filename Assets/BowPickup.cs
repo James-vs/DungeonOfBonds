@@ -12,6 +12,7 @@ public class BowPickup : MonoBehaviour
     private bool pickup = false;
     private bool swordGotten = false;
     private GameObject hc;
+    
 
     public TriggerToDialogue ttd;
     public string message;
@@ -32,7 +33,7 @@ public class BowPickup : MonoBehaviour
 
         if(Input.GetKey("f") && pickup){
             transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nClick to fire! Make it to that chest!";
+            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nClick to fire! Kill that slime boss!";
             swordGotten = true;
             //ENABLE SWORD ATTACKS
         }
@@ -52,7 +53,7 @@ public class BowPickup : MonoBehaviour
     void OnTriggerExit2D(Collider2D col){
         pickup = false;
         if(swordGotten){
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nClick to fire! Make it to that chest!";
+            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nClick to fire! Kill that slime boss!";
         }
     }
 }

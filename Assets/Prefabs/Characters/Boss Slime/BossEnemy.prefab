@@ -118,7 +118,11 @@ MonoBehaviour:
   speed: 300
   nextWaypointDistance: 3
   slime: {fileID: 113122160839972263, guid: 284b2f29d8163a64ab3568bf4167aa76, type: 3}
-  health: 10
+  isDefeated: 0
+  damage: 30
+  damaged: 0
+  switchWall: {fileID: 0}
+  health: 100
 --- !u!212 &2376705804299254297
 SpriteRenderer:
   m_ObjectHideFlags: 0
