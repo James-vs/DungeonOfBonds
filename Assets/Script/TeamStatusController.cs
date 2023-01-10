@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using Pathfinding;
 
 public class TeamStatusController : MonoBehaviour
 {
@@ -54,6 +55,9 @@ public class TeamStatusController : MonoBehaviour
         GameObject tm = GameObject.Find(name);
         if (tm.GetComponent<AITeammateData>().onTheTeam == false){
             teamMates.Add(tm);
+            tm.GetComponent<AIPath>().enabled = true;
+            tm.GetComponent<AIDestinationSetter>().enabled = true;
+            tm.GetComponent<AICombatController>().enabled = true;
             GameObject newAiUI = Instantiate(aiUI, hudcanvas.transform);
             nameToUIPiece.Add(name, newAiUI);
             Vector3 pos = newAiUI.transform.position;   //NEEDS TESTING

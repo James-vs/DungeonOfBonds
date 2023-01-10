@@ -25,7 +25,9 @@ public class CanBeAdded : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col){
-        pickup = true;
+        if (col.gameObject.name == "Player"){
+            pickup = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D col){
