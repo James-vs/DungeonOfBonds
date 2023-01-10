@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
+using TMPro;
 
 public class BossSlimeAIScript : MonoBehaviour
 {
@@ -105,6 +106,8 @@ public class BossSlimeAIScript : MonoBehaviour
 
     // function to trigger defeated animation    
     public void Defeated() {
+        var hc = GameObject.Find("HUDCanvas");
+        hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nLeave the dungeon to safety";
         animator.SetTrigger("Defeated");
         isDefeated = true;
     }
