@@ -35,7 +35,7 @@ public class EndTriggerSplit : MonoBehaviour
                 var boxToSpawn = ttd.dbox("You're always welcome in our tavern!");
                 Instantiate(boxToSpawn, talker.transform);
             }
-            if(timeSinceTrigger > 8f){
+            if(timeSinceTrigger > 10f){
                 SceneManager.LoadScene(9);
             }
     }

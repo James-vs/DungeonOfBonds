@@ -33,11 +33,11 @@ public class LeavesYouTrigger : MonoBehaviour
                 timeSinceTrigger += Time.deltaTime;
             }
 
-            if(timeSinceTrigger > 1f && timeSinceTrigger < 3.9f){
-                jt.GetComponent<Rigidbody2D>().velocity = new Vector3(1.2f, 0f, 0f);
+            if(timeSinceTrigger > 2.5f && timeSinceTrigger < 6.9f){
+                jt.GetComponent<Rigidbody2D>().velocity = new Vector3(0.7f, 0f, 0f);
             }
 
-            if(timeSinceTrigger > 4f){
+            if(timeSinceTrigger > 7f){
                 playerC.UnlockMovement();
                 jt.SetActive(false);
                 done = true;
