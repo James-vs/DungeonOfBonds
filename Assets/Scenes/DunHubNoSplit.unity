@@ -7034,7 +7034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3884312919862002584, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
       propertyPath: maxSpeed
-      value: 1
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
@@ -68969,6 +68969,10 @@ PrefabInstance:
       propertyPath: talker
       value: 
       objectReference: {fileID: 1697211830}
+    - target: {fileID: 8831206821513021671, guid: eb2c536ec5ab1db4991cbf5525d4657a, type: 3}
+      propertyPath: message
+      value: You know what? I've had enough, i don't get paid enough for this rubbish
+      objectReference: {fileID: 0}
     - target: {fileID: 8831206821513021674, guid: eb2c536ec5ab1db4991cbf5525d4657a, type: 3}
       propertyPath: m_Name
       value: LeavingYouTrigger
