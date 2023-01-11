@@ -20,7 +20,7 @@ public class Clicker : MonoBehaviour
         healthBar.SetActive(false);
         coinsView.SetActive(false);
         currentObjective.SetActive(false);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
     }
 
     public void exit() {
@@ -28,7 +28,7 @@ public class Clicker : MonoBehaviour
         healthBar.SetActive(true);
         coinsView.SetActive(true);
         currentObjective.SetActive(true);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
     }
 }
 
