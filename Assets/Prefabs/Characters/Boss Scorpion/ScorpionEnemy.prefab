@@ -183,7 +183,7 @@ MonoBehaviour:
   projectileAudio: {fileID: 2297833443030643837}
   deathAudio: {fileID: 2290718005437796829}
   damageAudio: {fileID: 1795385857653430544}
-  health: 350
+  health: 250
 --- !u!95 &5934234555451704251
 Animator:
   serializedVersion: 5
