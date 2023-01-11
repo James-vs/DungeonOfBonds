@@ -6,17 +6,8 @@ public class FriendlyProjectile : MonoBehaviour
 {
 
     public float damageToDeal = 0.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // audio sources
+    public AudioSource enemyHit;
 
     void OnTriggerEnter2D(Collider2D col){
         Debug.Log("col");
@@ -28,11 +19,14 @@ public class FriendlyProjectile : MonoBehaviour
                 BossScorpionAIScript s = col.gameObject.GetComponent<BossScorpionAIScript>();
                 s.Health -= damageToDeal;
                 s.damaged = true;
+                enemyHit.Play();
             } else if (e == null) { // if enemy not a basic enemy
                 b.Health -= damageToDeal;
                 b.damaged = true;
+                enemyHit.Play();
             } else {
                 e.Health -= damageToDeal;
+                enemyHit.Play();
             }
             Destroy(gameObject);
         }

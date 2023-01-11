@@ -15,6 +15,8 @@ public class BossSlimeAIScript : MonoBehaviour
     public float damage = 30f;
     public bool damaged = false;
     public GameObject switchWall;
+    public AudioSource damagedAudio;
+    public AudioSource deathAudio;
     
     float timer = 1f;
     Path path;
@@ -101,6 +103,7 @@ public class BossSlimeAIScript : MonoBehaviour
 
         if (damaged == true) {
             animator.SetBool("Damaged", true);
+            if (!damagedAudio.isPlaying) damagedAudio.Play();
         }
     }
 
@@ -110,6 +113,7 @@ public class BossSlimeAIScript : MonoBehaviour
         hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nLeave the dungeon to safety";
         animator.SetTrigger("Defeated");
         isDefeated = true;
+        deathAudio.Play();
     }
 
     // function to destroy enemy and unblock next level switch 

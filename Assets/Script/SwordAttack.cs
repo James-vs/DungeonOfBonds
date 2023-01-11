@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class SwordAttack : MonoBehaviour
 {
+    // audio sources
+    public AudioSource slimeHit;
+
 
     public float damage = 3f;
     Vector2 rightAttackOffset;
     Collider2D swordCollider;
+
 
     private void Start() {
         swordCollider = GetComponent<Collider2D>();
@@ -40,12 +44,15 @@ public class SwordAttack : MonoBehaviour
 
             if (enemy != null) {
                 enemy.Health -= damage;
+                if (!slimeHit.isPlaying) slimeHit.Play();
             } else if (b != null) {
                 b.Health -= damage;
                 b.damaged = true;
+                if (!slimeHit.isPlaying) slimeHit.Play();
             } else if (s != null) {
                 s.Health -= damage;
                 s.damaged = true;
+                if (!slimeHit.isPlaying) slimeHit.Play();
             }
         }
     }

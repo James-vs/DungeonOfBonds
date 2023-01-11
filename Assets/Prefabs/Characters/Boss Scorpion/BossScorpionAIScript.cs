@@ -17,8 +17,12 @@ public class BossScorpionAIScript : MonoBehaviour
     public GameObject projectile;
     public GameObject backWall;
     public GameObject bossbattleWall;
+
+    public AudioSource projectileAudio;
+    public AudioSource deathAudio;
+    public AudioSource damageAudio;
     
-    float timer = 1f;
+    float timer = 0.7f;
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
@@ -100,10 +104,12 @@ public class BossScorpionAIScript : MonoBehaviour
             Instantiate(slime, rb.position, transform.rotation);
             Instantiate(projectile, rb.position, transform.rotation);
             timer = 1f;
+            projectileAudio.Play();
         }
 
         if (damaged == true) {
             animator.SetBool("Damaged", true);
+            if (!damageAudio.isPlaying) damageAudio.Play();
         }
     }
 
@@ -111,6 +117,7 @@ public class BossScorpionAIScript : MonoBehaviour
     public void Defeated() {
         animator.SetTrigger("Defeated");
         isDefeated = true;
+        deathAudio.Play();
     }
 
     // function to destroy enemy and unblock next level switch 
