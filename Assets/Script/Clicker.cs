@@ -10,9 +10,11 @@ public class Clicker : MonoBehaviour
     public GameObject healthBar;
     public GameObject coinsView;
     public GameObject currentObjective;
+    public AudioSource chestClick;
 
     // method to allow player to click the chest for the rewards screen
     private void OnMouseDown() {
+        if (!chestClick.isPlaying) chestClick.Play();
         moneyChoice.SetActive(true);
         //player.SetActive(false);
         healthBar.SetActive(false);
