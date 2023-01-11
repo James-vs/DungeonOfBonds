@@ -10,6 +10,7 @@ public class Clicker : MonoBehaviour
     public GameObject healthBar;
     public GameObject coinsView;
     public GameObject currentObjective;
+    public GameObject bossBattleWall;
     public AudioSource chestClick;
 
     // method to allow player to click the chest for the rewards screen
@@ -20,6 +21,7 @@ public class Clicker : MonoBehaviour
         healthBar.SetActive(false);
         coinsView.SetActive(false);
         currentObjective.SetActive(false);
+        bossBattleWall.SetActive(false);
         //Time.timeScale = 0f;
     }
 
