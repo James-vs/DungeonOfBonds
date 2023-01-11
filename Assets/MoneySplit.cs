@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoneySplit : MonoBehaviour
 {
     public void cSplit(){
         var btt = GameObject.Find("BackToTavern").GetComponent<BackToTavern>();
         btt.splitCash = true;
-        exit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        //exit();
     }
 
     public void cNoSplit(){
         var btt = GameObject.Find("BackToTavern").GetComponent<BackToTavern>();
         btt.splitCash = false;
-        exit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+        //exit();
     }
     
 
