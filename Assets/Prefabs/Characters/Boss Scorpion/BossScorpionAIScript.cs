@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
+using TMPro;
 
 public class BossScorpionAIScript : MonoBehaviour
 {
@@ -118,6 +119,8 @@ public class BossScorpionAIScript : MonoBehaviour
         animator.SetTrigger("Defeated");
         isDefeated = true;
         deathAudio.Play();
+        var hc = GameObject.Find("HUDCanvas");
+        hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\n Make it back to the tavern";
     }
 
     // function to destroy enemy and unblock next level switch 
