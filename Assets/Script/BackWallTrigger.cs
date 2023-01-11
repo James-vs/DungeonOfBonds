@@ -28,7 +28,7 @@ public class BackWallTrigger : MonoBehaviour
             Instantiate(boxToSpawn, col.gameObject.transform);
             triggered = true;
             var hc = GameObject.Find("HUDCanvas");
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nHead west to the tavern.";
+            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nHead east to the tavern.";
         }
 
     }
