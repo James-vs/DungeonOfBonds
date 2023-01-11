@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class MoneySplit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public void cSplit(){
+        var btt = GameObject.Find("BackToTavern").GetComponent<BackToTavern>();
+        btt.splitCash = true;
+        exit();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void cNoSplit(){
+        var btt = GameObject.Find("BackToTavern").GetComponent<BackToTavern>();
+        btt.splitCash = false;
+        exit();
+    }
+    
+
+    public void exit() {
+        var chest = GameObject.Find("Studded_Wooden_Chest");
+        chest.GetComponent<Clicker>().exit();
+        chest.SetActive(false);
+        var chestG = GameObject.Find("ChestGlow");
+        chestG.SetActive(false);   
+        gameObject.SetActive(false);
     }
 }

@@ -20,5 +20,13 @@ public class Clicker : MonoBehaviour
         currentObjective.SetActive(false);
         Time.timeScale = 0f;
     }
+
+    public void exit() {
+        Debug.Log("Click detected");
+        healthBar.SetActive(true);
+        coinsView.SetActive(true);
+        currentObjective.SetActive(true);
+        Time.timeScale = 1f;
+    }
 }
 
