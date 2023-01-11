@@ -20,7 +20,7 @@ public class CheckForD1C : MonoBehaviour
             // enable chest
             d1CBlocker.SetActive(false);
             dungeon1Complete.SetActive(true);
-            bossBattleWall.SetActive(false);
+            //bossBattleWall.SetActive(false);
             backWall.SetActive(false);
             chest.SetActive(true);
         }
