@@ -10,7 +10,7 @@ public class BackToTavern : MonoBehaviour
     
 
     private void Start() {
-        splitCash = false;
+        splitCash = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
