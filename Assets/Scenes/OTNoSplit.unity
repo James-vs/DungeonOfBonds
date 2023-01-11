@@ -89475,7 +89475,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 29
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -92810,8 +92810,8 @@ Tilemap:
     m_Data: {fileID: 7835142486446003816, guid: 4d58bc12262e76040a130c79a34f82b5, type: 3}
   - m_RefCount: 61
     m_Data: {fileID: -2784588437047556075, guid: 4d58bc12262e76040a130c79a34f82b5, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 665245241, guid: 8eb79106fdee4824799b4cb63359e85d, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: 21300000, guid: 305493f7c7501fe4e879481ec03fbfce, type: 3}
   - m_RefCount: 45
@@ -92832,8 +92832,8 @@ Tilemap:
     m_Data: {fileID: -2126184730, guid: 4d58bc12262e76040a130c79a34f82b5, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 665245241, guid: 8eb79106fdee4824799b4cb63359e85d, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: -1575551128, guid: 4d58bc12262e76040a130c79a34f82b5, type: 3}
   - m_RefCount: 1
@@ -93566,6 +93566,23 @@ MonoBehaviour:
   aiSet: []
   hudcanvas: {fileID: 328300572}
   aiUI: {fileID: 5046829282242632881, guid: 0db982cd6785711499b6b7c72438b7d7, type: 3}
+--- !u!114 &3542194843823885900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3542194843823885890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cc4afd224c3cb4789642e87649ae9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bowDamage: 4.5
+  bowLevelMultiplier: 1
+  attackCooldown: 0.5
+  arrowSpeed: 5
+  arrowToShoot: {fileID: 3957020864036676421, guid: 0a48a29f14c430d478f7e1a14950c604, type: 3}
 --- !u!1001 &5914588408118290177
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class BowAttack : MonoBehaviour
 
     public float bowDamage = 3f;
     public float bowLevelMultiplier = 1.0f; 
-    public float attackCooldown = 0.8f;
+    public float attackCooldown = 0.6f;
     public float arrowSpeed = 5f;
     private float timeSinceLast = 0.0f;
     public GameObject arrowToShoot;

@@ -4626,7 +4626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bowDamage: 3
   bowLevelMultiplier: 1
-  attackCooldown: 0.5
+  attackCooldown: 0.6
   arrowSpeed: 5
   arrowToShoot: {fileID: 3957020864036676421, guid: 0a48a29f14c430d478f7e1a14950c604, type: 3}
 --- !u!1001 &424877058

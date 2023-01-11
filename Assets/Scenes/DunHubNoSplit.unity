@@ -4519,7 +4519,7 @@ PrefabInstance:
       objectReference: {fileID: 424877059}
     - target: {fileID: 6653637966873099454, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
       propertyPath: damage
-      value: 2
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6955905211331639589, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
       propertyPath: m_Enabled
@@ -4537,6 +4537,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3542194842235421588, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
   m_PrefabInstance: {fileID: 378177641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &378177643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3542194842235421586, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
+  m_PrefabInstance: {fileID: 378177641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &378177645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378177643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7cc4afd224c3cb4789642e87649ae9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bowDamage: 4.5
+  bowLevelMultiplier: 1
+  attackCooldown: 0.6
+  arrowSpeed: 5
+  arrowToShoot: {fileID: 3957020864036676421, guid: 0a48a29f14c430d478f7e1a14950c604, type: 3}
 --- !u!1001 &383664488
 PrefabInstance:
   m_ObjectHideFlags: 0
