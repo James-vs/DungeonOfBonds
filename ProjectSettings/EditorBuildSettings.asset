@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: e33783e9408cbd342af2a668136ac464
   - enabled: 1
     path: Assets/Scenes/OTSplitCash.unity
-    guid: b0df7edf0335b344b93ae62fe4f7e665
+    guid: 86cd5c1581c6e704daed3136d3ae7e82
   - enabled: 1
     path: Assets/Scenes/DunHubSplitCash.unity
     guid: 5739f7c9c50d3a94c8487913bed80316

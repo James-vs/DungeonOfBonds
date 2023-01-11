@@ -10,6 +10,7 @@ public class TriggerScr : MonoBehaviour
     public string message;
     private bool triggered = false;
     public GameObject talker;
+    public string objective;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,10 @@ public class TriggerScr : MonoBehaviour
             var boxToSpawn = ttd.dbox(message);
             Instantiate(boxToSpawn, talker.transform);
             triggered = true;
+            if (objective != ""){
+                var hc = GameObject.Find("HUDCanvas");
+                hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\n" + objective;
+            }
         }
 
     }

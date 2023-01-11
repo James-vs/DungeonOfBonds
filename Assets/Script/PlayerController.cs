@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public float collisionOffset = 0.05f;
     public SwordAttack swordAttack;
+    public bool dungeonEnabled;
     
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        dungeonEnabled = false;
     }
 
     // Physics controls 
@@ -127,6 +129,8 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("DungeonEntrance")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }else if (other.CompareTag("Food")) {
+           dungeonEnabled = true;
         }
     }
 
