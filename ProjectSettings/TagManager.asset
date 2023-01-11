@@ -12,6 +12,7 @@ TagManager:
   - AI
   - Food
   - EnemyProjectile
+  - EndScreen
   layers:
   - Default
   - TransparentFX

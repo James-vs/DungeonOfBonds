@@ -9,6 +9,8 @@ public class DamagePlayer : MonoBehaviour
     public GameObject healthBar;
     // audio sources
     public AudioSource heal;
+    public AudioSource damageAudio;
+    public AudioSource deathAudio;
 
     // reference to players animator
     Animator animator;
@@ -39,7 +41,7 @@ public class DamagePlayer : MonoBehaviour
             }
         } else if (other.CompareTag("Food")) {
             IncreaseHealth(slider, 100f);
-            if (!heal.isPlaying) heal.Play();
+            
         } else if (other.CompareTag("EnemyProjectile")) {
             InflictDamage(slider, other.GetComponent<ScorpionProjectile>().damage);
         }
@@ -51,7 +53,9 @@ public class DamagePlayer : MonoBehaviour
         if (slider.value <= 0) {
             Debug.Log("Player Death");
             animator.SetTrigger("Death");
+            if (!deathAudio.isPlaying) deathAudio.Play();
         }
+        if (!damageAudio.isPlaying) damageAudio.Play();
     }
 
     // function to increase the health of the player by the value given
@@ -61,5 +65,6 @@ public class DamagePlayer : MonoBehaviour
         if (slider.value > 100f) {
             slider.value = 100f;
         }
+        if (!heal.isPlaying) heal.Play();
     }
 }

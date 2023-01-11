@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public AudioSource death;
     Animator animator;
     public bool isDefeated = false;
     public float Health {
@@ -32,6 +33,7 @@ public class Enemy : MonoBehaviour
     public void Defeated() {
         animator.SetTrigger("Defeated");
         isDefeated = true;
+        death.Play();
     }
 
     public void RemoveEnemy() {

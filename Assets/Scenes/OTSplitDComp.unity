@@ -86147,7 +86147,7 @@ GameObject:
   - component: {fileID: 1674270611}
   m_Layer: 0
   m_Name: DungeonEntrance
-  m_TagString: DungeonEntrance
+  m_TagString: EndScreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93908,7 +93908,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3015030696420873369, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 886138579a4cbf54295bbf61df7fed50, type: 3}
 --- !u!1 &3542194843823885890 stripped
 GameObject:

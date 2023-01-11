@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
 
+    public AudioSource playerWalk;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,8 +75,8 @@ public class PlayerController : MonoBehaviour
             );
 
             if (count == 0) {
-                
                 rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+                if (!playerWalk.isPlaying) playerWalk.Play();
                 return true;
             } else {
                 return false;
@@ -131,6 +133,8 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }else if (other.CompareTag("Food")) {
            dungeonEnabled = true;
+        } else if (other.CompareTag("EndScreen")) { // if player finishes game and tried to do back in dungeon
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
         }
     }
 
