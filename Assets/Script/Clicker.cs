@@ -12,12 +12,16 @@ public class Clicker : MonoBehaviour
     public GameObject currentObjective;
     public GameObject bossBattleWall;
     public AudioSource chestClick;
+    public GameObject bosshealthBar;
+    public GameObject swapTxt;
 
     // method to allow player to click the chest for the rewards screen
     private void OnMouseDown() {
         if (!chestClick.isPlaying) chestClick.Play();
         moneyChoice.SetActive(true);
         //player.SetActive(false);
+        bosshealthBar.SetActive(false);
+        swapTxt.SetActive(false);
         healthBar.SetActive(false);
         coinsView.SetActive(false);
         currentObjective.SetActive(false);
@@ -30,6 +34,8 @@ public class Clicker : MonoBehaviour
         healthBar.SetActive(true);
         coinsView.SetActive(true);
         currentObjective.SetActive(true);
+        bosshealthBar.SetActive(true);
+        swapTxt.SetActive(true);
         //Time.timeScale = 1f;
     }
 }
