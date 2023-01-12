@@ -66,7 +66,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Alberto
+  m_text: '
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f95e67556cc7ece4e933e89ac9a86d59, type: 2}
   m_sharedMaterial: {fileID: 2726130780741777162, guid: f95e67556cc7ece4e933e89ac9a86d59, type: 2}

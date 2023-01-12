@@ -4646,6 +4646,30 @@ PrefabInstance:
 
         Kill Slime Boss'
       objectReference: {fileID: 0}
+    - target: {fileID: 1255861446877456298, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_MaxValue
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861446877456298, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861446877456298, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_WholeNumbers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861447300203911, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861447300203911, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861448397436669, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6076661428886680856, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6738,7 +6762,8 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 0.85
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4488631065487544237, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c30dedeab1ca0b8469b02273127f47be, type: 3}
 --- !u!1 &1338287462
 GameObject:
@@ -7736,6 +7761,7 @@ MonoBehaviour:
   healthBar: {fileID: 424877059}
   coinsView: {fileID: 1698080036}
   currentObjective: {fileID: 448433169}
+  bossBattleWall: {fileID: 0}
   chestClick: {fileID: 1828429624}
 --- !u!82 &1828429624
 AudioSource:
