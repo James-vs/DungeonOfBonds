@@ -65,7 +65,7 @@ public class BossScorpionAIScript : MonoBehaviour
         seeker.StartPath(rb.position, target.position, OnPathComplete);
 
         hc = GameObject.Find("HUDCanvas");
-        hbGO = hc.transform.GetChild(4).gameObject;
+        hbGO = hc.transform.GetChild(3).gameObject;
         hbGO.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Scorpion Boss";
         hbGO.SetActive(true);
 
@@ -122,7 +122,7 @@ public class BossScorpionAIScript : MonoBehaviour
             animator.SetBool("Damaged", true);
             if (!damageAudio.isPlaying) damageAudio.Play();
         }
-        hbGO.transform.GetChild(0).GetComponent<Slider>().value = health;
+        hbGO.transform.GetChild(0).GetComponent<Slider>().value = Health;
     }
 
     // function to trigger defeated animation    
