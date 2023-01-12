@@ -33,8 +33,10 @@ public class BowPickup : MonoBehaviour
 
         if(Input.GetKey("f") && pickup){
             transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nClick to fire! Kill that slime boss!";
+            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nSwap to the bow with [2]. Click to fire! Kill that slime boss!";
+            hc.transform.GetChild(5).gameObject.SetActive(true);
             swordGotten = true;
+            GameObject.Find("Player").GetComponent<PlayerController>().bowUnlocked = true;
             //ENABLE SWORD ATTACKS
         }
     }
@@ -46,14 +48,13 @@ public class BowPickup : MonoBehaviour
             Instantiate(boxToSpawn, col.gameObject.transform);
             hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nPress F to pickup the bow";
             col.gameObject.transform.GetChild(0).GetComponent<Collider2D>().enabled = true;
-            col.gameObject.GetComponent<BowAttack>().enabled = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D col){
         pickup = false;
         if(swordGotten){
-            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nClick to fire! Kill that slime boss!";
+            hc.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Objective:\nSwap to the bow with [2]. Click to fire! Kill that slime boss!";
         }
     }
 }
