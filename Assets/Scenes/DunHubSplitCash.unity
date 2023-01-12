@@ -4727,6 +4727,22 @@ PrefabInstance:
 
         Kill Slime Boss'
       objectReference: {fileID: 0}
+    - target: {fileID: 1255861446877456298, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_MaxValue
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861447300203911, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861447300203911, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255861448397436668, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6076661428886680856, guid: 5dd72d9e55b399f4d8330765e8f9bcdd, type: 3}
       propertyPath: m_Pivot.x
       value: 0

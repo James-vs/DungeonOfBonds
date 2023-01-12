@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class BossSlimeAIScript : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class BossSlimeAIScript : MonoBehaviour
     public GameObject switchWall;
     public AudioSource damagedAudio;
     public AudioSource deathAudio;
+
+    private GameObject hc;
+    private GameObject hbGO;
     
     float timer = 1f;
     Path path;
@@ -53,6 +57,12 @@ public class BossSlimeAIScript : MonoBehaviour
 
         InvokeRepeating("UpdatePath", 0f, .5f);
         seeker.StartPath(rb.position, target.position, OnPathComplete);
+
+        hc = GameObject.Find("HUDCanvas");
+        hbGO = hc.transform.GetChild(4).gameObject;
+        hbGO.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Slime Boss";
+        hbGO.SetActive(true);
+
 
     }    
 
@@ -105,6 +115,8 @@ public class BossSlimeAIScript : MonoBehaviour
             animator.SetBool("Damaged", true);
             if (!damagedAudio.isPlaying) damagedAudio.Play();
         }
+
+        hbGO.transform.GetChild(0).GetComponent<Slider>().value = health;
     }
 
     // function to trigger defeated animation    

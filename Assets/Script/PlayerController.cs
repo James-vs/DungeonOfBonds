@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.05f;
     public SwordAttack swordAttack;
     public bool dungeonEnabled;
+    public bool bowUnlocked;
     
     Vector2 movementInput;
     Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    BowAttack ba;
     
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
@@ -30,6 +32,15 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         dungeonEnabled = false;
+        ba = GetComponent<BowAttack>();
+        if(ba != null){
+            if(ba.enabled == false){
+                bowUnlocked = false;
+            }else{
+               bowUnlocked = true;
+            }
+            ba.enabled = false; 
+        }
     }
 
     // Physics controls 
@@ -62,6 +73,22 @@ public class PlayerController : MonoBehaviour
                 //Debug.Log("IsMoving: False");
             }
         }
+
+        if (Input.GetKey("1")){
+            swordAttack.enabled = true;
+            if(ba != null){
+                ba.enabled = false;
+            }
+        }
+
+        if (Input.GetKey("2")){
+            swordAttack.enabled = false;
+            if(ba != null && bowUnlocked){
+                ba.enabled = true;
+            }else{
+                swordAttack.enabled = true;
+            }
+        }
     }
 
     private bool TryMove(Vector2 direction) {
@@ -85,6 +112,7 @@ public class PlayerController : MonoBehaviour
             // Can't move if there's no direction to move in
             return false;
         }
+
     }
 
     // Movement Controls
@@ -94,7 +122,9 @@ public class PlayerController : MonoBehaviour
 
     void OnFire() {
         print("Fire pressed");
-        animator.SetTrigger("SwordAttack");
+        if (swordAttack.enabled == true){
+            animator.SetTrigger("SwordAttack");
+        }
     }
 
     public void SwordAttack() {

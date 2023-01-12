@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class BossScorpionAIScript : MonoBehaviour
@@ -32,6 +33,10 @@ public class BossScorpionAIScript : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
 
+
+    private GameObject hc;
+    private GameObject hbGO;
+
     Animator animator;
 
     public float Health {
@@ -58,6 +63,11 @@ public class BossScorpionAIScript : MonoBehaviour
 
         InvokeRepeating("UpdatePath", 0f, .5f);
         seeker.StartPath(rb.position, target.position, OnPathComplete);
+
+        hc = GameObject.Find("HUDCanvas");
+        hbGO = hc.transform.GetChild(3).gameObject;
+        hbGO.transform.GetChild(1).gameObject.GetComponent<TextMeshProUGUI>().text = "Scorpion Boss";
+        hbGO.SetActive(true);
 
     }    
 
@@ -112,6 +122,7 @@ public class BossScorpionAIScript : MonoBehaviour
             animator.SetBool("Damaged", true);
             if (!damageAudio.isPlaying) damageAudio.Play();
         }
+        hbGO.transform.GetChild(0).GetComponent<Slider>().value = Health;
     }
 
     // function to trigger defeated animation    
